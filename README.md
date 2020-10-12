@@ -1,4 +1,4 @@
-# tfjs-aug
+# Keras in Browser
 
 A CNN model trained based on photos I took.
 
