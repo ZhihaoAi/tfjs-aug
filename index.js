@@ -1,11 +1,11 @@
 CLASSES = {
-  0: 'daisy',
-  1: 'dandelion',
-  2: 'rose',
+  0: 'flower',
+  1: 'green plant',
+  2: 'sea',
 };
 
 const MODEL_PATH =
-    'model.json';
+    './model.json';
 
 const IMAGE_SIZE = 192;
 const TOPK_PREDICTIONS = 3;
@@ -23,15 +23,15 @@ const demo = async () => {
 
   status('');
 
-  // Make a prediction through the locally hosted cat.jpg.
-  const catElement = document.getElementById('cat');
-  if (catElement.complete && catElement.naturalHeight !== 0) {
-    predict(catElement);
-    catElement.style.display = '';
+  // Make a prediction through the locally hosted sample image.
+  const sampleElement = document.getElementById('img_sample');
+  if (sampleElement.complete && sampleElement.naturalHeight !== 0) {
+    predict(sampleElement);
+    sampleElement.style.display = '';
   } else {
-    catElement.onload = () => {
-      predict(catElement);
-      catElement.style.display = '';
+    sampleElement.onload = () => {
+      predict(sampleElement);
+      sampleElement.style.display = '';
     }
   }
 
