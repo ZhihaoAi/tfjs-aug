@@ -1,5 +1,7 @@
 # Keras in Browser
 
-A CNN model trained based on photos I took.
+A CNN model trained on photos taken by [Yihan Xu](https://www.instagram.com/yihan_xu_lotus/).
 
-Due to the small number of images, data augmentation and dropout is used to overcome overfitting issue. TensorFlow.js converter is used so we can [run inference in browser](https://zhihaoai.github.io/tfjs-aug/).
+Due to limited number (~300) of images , data augmentation and dropout is used to overcome overfitting issue.
+
+TensorFlow.js is used to deploy the pretrained Keras model directly in [broswer](https://zhihaoai.github.io/tfjs-aug/).
